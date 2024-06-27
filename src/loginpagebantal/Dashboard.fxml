@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="740.0" prefWidth="1200.0" style="-fx-background-color: EAF5E8;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginpagebantal.DashboardController">
+   <children>
+      <BorderPane fx:id="mainPane" prefHeight="740.0" prefWidth="1200.0" style="-fx-background-color: EAF5E8EAF5E8;">
+         <left>
+            <VBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="610.0" prefWidth="275.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="275.0">
+                     <children>
+                        <ImageView fitHeight="76.0" fitWidth="76.0" layoutX="97.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/man.png" />
+                           </image>
+                        </ImageView>
+                        <Line endX="186.0" layoutX="89.0" layoutY="147.0" startX="-100.0" />
+                        <Button fx:id="Dashboard" alignment="BASELINE_LEFT" layoutX="12.0" layoutY="178.0" mnemonicParsing="false" onAction="#Dashboardpsien" prefHeight="35.0" prefWidth="208.0" style="-fx-background-color: white;" text="           Dasbor">
+                           <font>
+                              <Font name="PT Sans" size="16.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="bKonsultasi" alignment="BASELINE_LEFT" layoutX="12.0" layoutY="239.0" mnemonicParsing="false" onAction="#sceneKonsultasi" prefHeight="35.0" prefWidth="208.0" style="-fx-background-color: white;" text="           Konsultasi">
+                           <font>
+                              <Font name="PT Sans" size="16.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="bProfil" alignment="BASELINE_LEFT" layoutX="12.0" layoutY="361.0" mnemonicParsing="false" onAction="#sceneProfil" prefHeight="35.0" prefWidth="208.0" style="-fx-background-color: white;" text="           Profil">
+                           <font>
+                              <Font name="PT Sans" size="16.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="memantauperkembangan" alignment="BASELINE_LEFT" layoutX="61.0" layoutY="299.0" mnemonicParsing="false" onAction="#mantauperkembangan" prefHeight="35.0" prefWidth="208.0" style="-fx-background-color: white;" text="Memantau Perkembangan">
+                           <font>
+                              <Font name="PT Sans" size="16.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="29.0" layoutY="183.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/dashboard.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="29.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/consulting.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="29.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/notes.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="29.0" layoutY="366.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/user.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="namaUser" alignment="CENTER" layoutX="8.0" layoutY="102.0" prefHeight="25.0" prefWidth="255.0">
+                           <font>
+                              <Font name="PT Sans" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </VBox>
+         </left>
+         <top>
+            <HBox prefHeight="130.0" prefWidth="1530.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <ImageView fitHeight="130.0" fitWidth="156.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../gambar/Bantuan%20Kesehatan%20Mental-2.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="60.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Button fx:id="Pelayananterdekat" mnemonicParsing="false" onAction="#Pelayananterdekat" style="-fx-background-color: white;" text="Pelayanan Terdekat">
+                     <HBox.margin>
+                        <Insets left="100.0" top="50.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="PT Sans" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="Diskusi" mnemonicParsing="false" onAction="#Diskusi" style="-fx-background-color: white;" text="Diskusi">
+                     <font>
+                        <Font name="PT Sans" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" top="50.0" />
+                     </HBox.margin>
+                  </Button>
+                  <TextField prefHeight="26.0" prefWidth="244.0">
+                     <HBox.margin>
+                        <Insets left="340.0" top="50.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <VBox maxWidth="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="625.0" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets right="350.0" />
+               </BorderPane.margin>
+               <children>
+                  <Pane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="230.0" prefWidth="564.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+                     <VBox.margin>
+                        <Insets left="30.0" top="20.0" />
+                     </VBox.margin>
+                     <children>
+                        <ImageView fitHeight="227.0" fitWidth="324.0" layoutX="227.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/undraw_medicine_b1ol-2.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="#4dd1a9" layoutX="45.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tes Medis">
+                           <font>
+                              <Font name="Avenir Next Bold" size="15.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="43.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tes bulanan akan">
+                           <font>
+                              <Font name="PT Sans" size="25.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="43.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="segera datang">
+                           <font>
+                              <Font name="PT Sans" size="25.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#00000067" layoutX="42.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kamis, 7 Juli 2022">
+                           <font>
+                              <Font name="PT Sans" size="14.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="Tambahkalender" layoutX="41.0" layoutY="162.0" mnemonicParsing="false" onAction="#Tableview" prefHeight="35.0" prefWidth="146.0" style="-fx-background-color: #4DD1A9;" text="+ Tambah ke Kalender" />
+                     </children>
+                     <effect>
+                        <DropShadow offsetX="3.0" offsetY="3.0">
+                           <color>
+                              <Color opacity="0.5" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Pane>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Kunjungi klinik terdekat">
+                     <VBox.margin>
+                        <Insets left="30.0" top="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="PT Sans" size="15.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="Lihatsemua" mnemonicParsing="false" onAction="#Pelayananterdekat" style="-fx-background-color: #EAF5E8;" text="Lihat semua" textFill="#4dd1a9">
+                     <VBox.margin>
+                        <Insets left="508.0" top="-21.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="PT Sans" size="13.0" />
+                     </font>
+                  </Button>
+                  <Pane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="170.0" prefWidth="170.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+                     <VBox.margin>
+                        <Insets left="30.0" top="9.0" />
+                     </VBox.margin>
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/hospital-2.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="13.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RS. Bethesda">
+                           <font>
+                              <Font name="PT Sans" size="15.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#00000066" layoutX="13.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Klinik Psikologi">
+                           <font>
+                              <Font name="PT Sans" size="13.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="loc1" alignment="BASELINE_LEFT" layoutX="3.0" layoutY="132.0" mnemonicParsing="false" onAction="#loc1" prefHeight="26.0" prefWidth="144.0" style="-fx-background-color: white;" text="       Lihat Map" textFill="#4dd1a9">
+                           <font>
+                              <Font name="PT Sans" size="13.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="10.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/map-2.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="119.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/next.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <effect>
+                        <DropShadow offsetX="3.0" offsetY="3.0">
+                           <color>
+                              <Color opacity="0.5" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Pane>
+                  <Pane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="170.0" prefWidth="170.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/hospital-10.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="13.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Puri Nirmala">
+                           <font>
+                              <Font name="PT Sans" size="15.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#00000066" layoutX="13.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rumah Sakit Jiwa">
+                           <font>
+                              <Font name="PT Sans" size="13.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="loc2" alignment="BASELINE_LEFT" layoutX="3.0" layoutY="132.0" mnemonicParsing="false" onAction="#loc2" prefHeight="26.0" prefWidth="144.0" style="-fx-background-color: white;" text="       Lihat Map" textFill="#4dd1a9">
+                           <font>
+                              <Font name="PT Sans" size="13.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="10.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/map-2.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="119.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/next.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="226.0" top="-170.0" />
+                     </VBox.margin>
+                     <effect>
+                        <DropShadow offsetX="3.0" offsetY="3.0">
+                           <color>
+                              <Color opacity="0.5" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Pane>
+                  <Pane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="170.0" prefWidth="170.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/hospital-8.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="13.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Psikolog Nadia">
+                           <font>
+                              <Font name="PT Sans" size="15.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#00000066" layoutX="13.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Praktik Psikolog">
+                           <font>
+                              <Font name="PT Sans" size="13.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="loc3" alignment="BASELINE_LEFT" layoutX="3.0" layoutY="132.0" mnemonicParsing="false" onAction="#loc3" prefHeight="26.0" prefWidth="144.0" style="-fx-background-color: white;" text="       Lihat Map" textFill="#4dd1a9">
+                           <font>
+                              <Font name="PT Sans" size="13.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="10.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/map-2.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="119.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/next.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="422.0" top="-170.0" />
+                     </VBox.margin>
+                     <effect>
+                        <DropShadow offsetX="3.0" offsetY="3.0">
+                           <color>
+                              <Color opacity="0.5" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Pane>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Obat anda saat ini">
+                     <VBox.margin>
+                        <Insets left="30.0" top="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="PT Sans" size="15.0" />
+                     </font>
+                  </Text>
+                  <Button mnemonicParsing="false" style="-fx-background-color: #EAF5E8;" text="Lihat semua" textFill="#4dd1a9">
+                     <VBox.margin>
+                        <Insets left="508.0" top="-21.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="PT Sans" size="13.0" />
+                     </font>
+                  </Button>
+                  <Pane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="73.0" prefWidth="170.0" style="-fx-background-color: white; -fx-background-radius: 14;">
+                     <VBox.margin>
+                        <Insets left="30.0" top="9.0" />
+                     </VBox.margin>
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="9.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/medicine.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="66.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Antiansietas">
+                           <font>
+                              <Font name="PT Sans" size="15.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#00000066" layoutX="66.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2 pil/hari">
+                           <font>
+                              <Font name="PT Sans" size="13.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#00000066" layoutX="88.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="28 Juni 2022">
+                           <font>
+                              <Font name="PT Sans" size="13.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="65.0" layoutY="46.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/calendar.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <effect>
+                        <DropShadow offsetX="3.0" offsetY="3.0">
+                           <color>
+                              <Color opacity="0.5" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Pane>
+                  <Pane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="73.0" prefWidth="170.0" style="-fx-background-color: white; -fx-background-radius: 14;">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="9.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/drugs.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="66.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Antidepresan">
+                           <font>
+                              <Font name="PT Sans" size="15.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#00000066" layoutX="66.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3 pil/hari">
+                           <font>
+                              <Font name="PT Sans" size="13.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#00000066" layoutX="88.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="29 Juni 2022">
+                           <font>
+                              <Font name="PT Sans" size="13.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="65.0" layoutY="46.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/calendar.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="226.0" top="-73.0" />
+                     </VBox.margin>
+                     <effect>
+                        <DropShadow offsetX="3.0" offsetY="3.0">
+                           <color>
+                              <Color opacity="0.5" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Pane>
+                  <Pane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="73.0" prefWidth="170.0" style="-fx-background-color: white; -fx-background-radius: 14;">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="9.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/capsules.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="66.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Antipsikotik">
+                           <font>
+                              <Font name="PT Sans" size="15.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#00000066" layoutX="66.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2 pil/hari">
+                           <font>
+                              <Font name="PT Sans" size="13.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#00000066" layoutX="88.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="30 Juni 2022">
+                           <font>
+                              <Font name="PT Sans" size="13.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="65.0" layoutY="46.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/calendar.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="422.0" top="-73.0" />
+                     </VBox.margin>
+                     <effect>
+                        <DropShadow offsetX="3.0" offsetY="3.0">
+                           <color>
+                              <Color opacity="0.5" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Pane>
+               </children>
+            </VBox>
+         </center>
+         <right>
+            <HBox prefHeight="610.0" prefWidth="278.0" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets left="-330.0" />
+               </BorderPane.margin>
+               <children>
+                  <Pane maxHeight="-Infinity" minHeight="-Infinity" prefHeight="569.0" prefWidth="268.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+                     <HBox.margin>
+                        <Insets left="-20.0" top="20.0" />
+                     </HBox.margin>
+                     <children>
+                        <ImageView fitHeight="269.0" fitWidth="268.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/6511591.jpg" />
+                           </image>
+                        </ImageView>
+                        <Pane layoutX="18.0" layoutY="358.0" prefHeight="142.0" prefWidth="51.0" style="-fx-background-color: #303030; -fx-background-radius: 15;">
+                           <children>
+                              <Pane prefHeight="54.0" prefWidth="51.0" style="-fx-background-color: #5DD1A9; -fx-background-radius: 15;">
+                                 <children>
+                                    <Text layoutX="10.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Senin">
+                                       <font>
+                                          <Font name="PT Sans" size="13.0" />
+                                       </font>
+                                    </Text>
+                                    <Line endX="5.5" layoutX="38.0" layoutY="47.0" startX="-30.5" stroke="#5dd1a9" strokeWidth="15.0" />
+                                    <Text layoutX="12.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="27">
+                                       <font>
+                                          <Font name="PT Sans" size="23.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </Pane>
+                              <Text fill="#4dd1a9" layoutX="6.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="09 : 00">
+                                 <font>
+                                    <Font name="PT Sans" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#4dd1a9" layoutX="6.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="15 : 00">
+                                 <font>
+                                    <Font name="PT Sans" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#4dd1a9" layoutX="23.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-">
+                                 <font>
+                                    <Font name="PT Sans" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#4dd1a9" layoutX="6.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="21 : 00">
+                                 <font>
+                                    <Font name="PT Sans" size="13.0" />
+                                 </font>
+                              </Text>
+                           </children></Pane>
+                        <Pane layoutX="78.0" layoutY="358.0" prefHeight="142.0" prefWidth="51.0" style="-fx-background-color: white; -fx-background-radius: 15;">
+                           <children>
+                              <Text fill="#303030" layoutX="6.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="07 : 00">
+                                 <font>
+                                    <Font name="PT Sans" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#303030" layoutX="6.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="13 : 00">
+                                 <font>
+                                    <Font name="PT Sans" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="8.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selasa">
+                                 <font>
+                                    <Font name="PT Sans" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#5dd1a9" layoutX="13.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="28">
+                                 <font>
+                                    <Font name="PT Sans" size="23.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#303030" layoutX="23.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-">
+                                 <font>
+                                    <Font name="PT Sans" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#303030" layoutX="6.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="20 : 00">
+                                 <font>
+                                    <Font name="PT Sans" size="13.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="138.0" layoutY="358.0" prefHeight="142.0" prefWidth="51.0" style="-fx-background-color: white; -fx-background-radius: 15;">
+                           <children>
+                              <Text fill="#303030" layoutX="6.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10 : 00">
+                                 <font>
+                                    <Font name="PT Sans" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#303030" layoutX="6.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="16 : 00">
+                                 <font>
+                                    <Font name="PT Sans" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="11.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rabu">
+                                 <font>
+                                    <Font name="PT Sans" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#5dd1a9" layoutX="13.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="29">
+                                 <font>
+                                    <Font name="PT Sans" size="23.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#303030" layoutX="23.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-">
+                                 <font>
+                                    <Font name="PT Sans" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#303030" layoutX="6.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="22 : 00">
+                                 <font>
+                                    <Font name="PT Sans" size="13.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="198.0" layoutY="358.0" prefHeight="142.0" prefWidth="51.0" style="-fx-background-color: white; -fx-background-radius: 15;">
+                           <children>
+                              <Text fill="#303030" layoutX="6.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="08 : 00">
+                                 <font>
+                                    <Font name="PT Sans" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#303030" layoutX="6.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="14 : 00">
+                                 <font>
+                                    <Font name="PT Sans" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="8.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kamis">
+                                 <font>
+                                    <Font name="PT Sans" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#5dd1a9" layoutX="13.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="30">
+                                 <font>
+                                    <Font name="PT Sans" size="23.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#303030" layoutX="23.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-">
+                                 <font>
+                                    <Font name="PT Sans" size="13.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#303030" layoutX="6.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="20 : 00">
+                                 <font>
+                                    <Font name="PT Sans" size="13.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                        <Text layoutX="18.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jadwalmu">
+                           <font>
+                              <Font name="PT Sans" size="20.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <effect>
+                        <DropShadow offsetX="3.0" offsetY="3.0">
+                           <color>
+                              <Color opacity="0.5" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Pane>
+               </children>
+            </HBox>
+         </right>
+         
+      </BorderPane>
+      </children>
+</AnchorPane>

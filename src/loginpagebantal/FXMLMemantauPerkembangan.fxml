@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="590.0" prefWidth="925.0" style="-fx-background-color: #EAF5E8 #EAF5E8;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginpagebantal.FXMLmemantauPerkembanganController">
+    <children>
+      <Text fill="#14c38e" layoutX="44.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bagaimana">
+         <font>
+            <Font name="Avenir Next Bold" size="40.0" />
+         </font>
+      </Text>
+      <Text fill="#14c38e" layoutX="44.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Perasaanmu Hari ">
+         <font>
+            <Font name="Avenir Next Bold" size="40.0" />
+         </font>
+      </Text>
+      <Text fill="#14c38e" layoutX="44.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ini?">
+         <font>
+            <Font name="Avenir Next Bold" size="40.0" />
+         </font>
+      </Text>
+      <Pane layoutX="45.0" layoutY="135.0" prefHeight="60.0" prefWidth="445.0" style="-fx-background-color: white; -fx-background-radius: 8;">
+         <children>
+            <Text layoutX="17.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Durasi tidur malam (jam) : 0.0">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font></Text>
+            <TextField fx:id="durasiTidur" layoutX="17.0" layoutY="26.0" prefHeight="26.0" prefWidth="93.0" />
+         </children>
+         <effect>
+            <DropShadow offsetX="3.0" offsetY="3.0">
+               <color>
+                  <Color opacity="0.5" />
+               </color></DropShadow>
+         </effect>
+      </Pane>
+      <Pane layoutX="45.0" layoutY="213.0" prefHeight="60.0" prefWidth="445.0" style="-fx-background-color: white; -fx-background-radius: 8;">
+         <children>
+            <Text layoutX="16.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mood depresi hari ini ( Tidak ada : 0 , Jarang : 1 , Sering : 2 , Parah : 3 )">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font></Text>
+            <RadioButton fx:id="dep0" layoutX="15.0" layoutY="33.0" mnemonicParsing="false" text="0">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="Moddepresi" />
+               </toggleGroup></RadioButton>
+            <RadioButton fx:id="dep1" layoutX="123.0" layoutY="34.0" mnemonicParsing="false" text="1" toggleGroup="$Moddepresi">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="dep2" layoutX="220.0" layoutY="34.0" mnemonicParsing="false" text="2" toggleGroup="$Moddepresi">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="dep3" layoutX="325.0" layoutY="34.0" mnemonicParsing="false" text="3" toggleGroup="$Moddepresi">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font></RadioButton>
+         </children>
+         <effect>
+            <DropShadow offsetX="3.0" offsetY="3.0">
+               <color>
+                  <Color opacity="0.5" />
+               </color></DropShadow>
+         </effect>
+      </Pane>
+      <Pane layoutX="44.0" layoutY="446.0" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: white; -fx-background-radius: 8;">
+         <children>
+            <CheckBox fx:id="cbGejala" layoutX="16.0" layoutY="11.0" mnemonicParsing="false" text="Gejala psikotik hari ini">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font></CheckBox>
+         </children>
+         <effect>
+            <DropShadow offsetX="3.0" offsetY="3.0">
+               <color>
+                  <Color opacity="0.5" />
+               </color></DropShadow>
+         </effect>
+      </Pane>
+      <Pane layoutX="45.0" layoutY="291.0" prefHeight="60.0" prefWidth="445.0" style="-fx-background-color: white; -fx-background-radius: 8;">
+         <children>
+            <Text layoutX="16.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mood tinggi hari ini ( Tidak ada : 0, Jarang : 1, Sering : 2 ,  Parah : 3 )">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font></Text>
+            <RadioButton fx:id="ting0" layoutX="15.0" layoutY="33.0" mnemonicParsing="false" text="0">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="moddtinggi" />
+               </toggleGroup></RadioButton>
+            <RadioButton fx:id="ting1" layoutX="123.0" layoutY="34.0" mnemonicParsing="false" text="1" toggleGroup="$moddtinggi">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="ting2" layoutX="220.0" layoutY="34.0" mnemonicParsing="false" text="2" toggleGroup="$moddtinggi">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="ting3" layoutX="325.0" layoutY="34.0" mnemonicParsing="false" text="3" toggleGroup="$moddtinggi">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font></RadioButton>
+         </children>
+         <effect>
+            <DropShadow offsetX="3.0" offsetY="3.0">
+               <color>
+                  <Color opacity="0.5" />
+               </color></DropShadow>
+         </effect>
+      </Pane>
+      <Pane layoutX="45.0" layoutY="369.0" prefHeight="60.0" prefWidth="445.0" style="-fx-background-color: white; -fx-background-radius: 8;">
+         <children>
+            <Text layoutX="16.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rasa cemas hari ini ( Tidak ada : 0, Jarang : 1, Sering : 2 ,  Parah : 3 )">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font></Text>
+            <RadioButton fx:id="cem0" layoutX="15.0" layoutY="33.0" mnemonicParsing="false" text="0">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="rasacms" />
+               </toggleGroup></RadioButton>
+            <RadioButton fx:id="cem1" layoutX="123.0" layoutY="34.0" mnemonicParsing="false" text="1" toggleGroup="$rasacms">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="cem2" layoutX="220.0" layoutY="34.0" mnemonicParsing="false" text="2" toggleGroup="$rasacms">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="cem3" layoutX="325.0" layoutY="34.0" mnemonicParsing="false" text="3" toggleGroup="$rasacms">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font></RadioButton>
+         </children>
+         <effect>
+            <DropShadow offsetX="3.0" offsetY="3.0">
+               <color>
+                  <Color opacity="0.5" />
+               </color></DropShadow>
+         </effect>
+      </Pane>
+      <Pane layoutX="271.0" layoutY="446.0" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: white; -fx-background-radius: 8;">
+         <children>
+            <CheckBox fx:id="cbTenaga" layoutX="16.0" layoutY="11.0" mnemonicParsing="false" text="Menemui tenaga ahli hari ini">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font></CheckBox>
+         </children>
+         <effect>
+            <DropShadow offsetX="3.0" offsetY="3.0">
+               <color>
+                  <Color opacity="0.5" />
+               </color></DropShadow>
+         </effect>
+      </Pane>
+      <Pane layoutX="44.0" layoutY="499.0" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: white; -fx-background-radius: 8;">
+         <children>
+            <CheckBox fx:id="cbLedakan" layoutX="16.0" layoutY="11.0" mnemonicParsing="false" text="Mengalami ledakan emosi">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font></CheckBox>
+         </children>
+         <effect>
+            <DropShadow offsetX="3.0" offsetY="3.0">
+               <color>
+                  <Color opacity="0.5" />
+               </color></DropShadow>
+         </effect>
+      </Pane>
+      <Pane layoutX="271.0" layoutY="499.0" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: white; -fx-background-radius: 8;">
+         <children>
+            <CheckBox fx:id="sulitfokus" layoutX="16.0" layoutY="11.0" mnemonicParsing="false" text="Sulit untuk fokus ">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font></CheckBox>
+         </children>
+         <effect>
+            <DropShadow offsetX="3.0" offsetY="3.0">
+               <color>
+                  <Color opacity="0.5" />
+               </color></DropShadow>
+         </effect>
+      </Pane>
+      <Button fx:id="Simpan" layoutX="199.0" layoutY="554.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#Simpanbtn" prefHeight="26.0" prefWidth="65.0" style="-fx-background-color: #4DD1A9;" text="Simpan">
+         <effect>
+            <DropShadow offsetX="3.0" offsetY="3.0">
+               <color>
+                  <Color opacity="0.5" />
+               </color></DropShadow>
+         </effect>
+         <font>
+            <Font name="PT Sans" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="Lanjut" layoutX="273.0" layoutY="554.0" mnemonicParsing="false" onAction="#scenememantauperkembangan" prefHeight="26.0" prefWidth="65.0" style="-fx-background-color: #4DD1A9;" text="Lanjut">
+         <effect>
+            <DropShadow offsetX="3.0" offsetY="3.0">
+               <color>
+                  <Color opacity="0.5" />
+               </color></DropShadow>
+         </effect>
+         <font>
+            <Font name="PT Sans" size="13.0" />
+         </font>
+      </Button>
+      <DatePicker fx:id="dpTanggal" layoutX="537.0" layoutY="153.0" prefHeight="26.0" prefWidth="240.0" />
+      <Text layoutX="538.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pilih Tanggal">
+         <font>
+            <Font name="PT Sans" size="13.0" />
+         </font></Text>
+      <Text layoutX="538.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Catatan">
+         <font>
+            <Font name="PT Sans" size="13.0" />
+         </font></Text>
+      <TextField alignment="TOP_LEFT" layoutX="538.0" layoutY="208.0" prefHeight="334.0" prefWidth="240.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+         <effect>
+            <DropShadow offsetX="3.0" offsetY="3.0">
+               <color>
+                  <Color opacity="0.5" />
+               </color>
+            </DropShadow>
+         </effect></TextField>
+   </children>
+</AnchorPane>

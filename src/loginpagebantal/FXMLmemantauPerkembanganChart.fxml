@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="1331.0" style="-fx-background-color: EAF5E8; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginpagebantal.FXMLmemantauPerkembanganChartController">
+    <children>
+      <Pane layoutX="10.0" layoutY="18.0" prefHeight="362.0" prefWidth="418.0" style="-fx-background-radius: 10; -fx-background-color: white;">
+         <effect>
+            <DropShadow offsetX="3.0" offsetY="3.0">
+               <color>
+                  <Color opacity="0.5" />
+               </color></DropShadow>
+         </effect>
+         <children>
+            <Label alignment="CENTER" layoutX="141.0" layoutY="14.0" prefHeight="23.0" prefWidth="137.0" text="Durasi Tidur ">
+               <font>
+                  <Font name="PT Sans" size="18.0" />
+               </font>
+            </Label>
+            <LineChart fx:id="cdurasi" layoutX="11.0" layoutY="90.0" prefHeight="246.0" prefWidth="361.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </LineChart>
+         </children>
+      </Pane>
+      <Pane layoutX="457.0" layoutY="18.0" prefHeight="362.0" prefWidth="418.0" style="-fx-background-radius: 10; -fx-background-color: white;">
+         <effect>
+            <DropShadow offsetX="3.0" offsetY="3.0">
+               <color>
+                  <Color opacity="0.5" />
+               </color></DropShadow>
+         </effect>
+         <children>
+            <Label alignment="CENTER" layoutX="118.0" layoutY="14.0" prefHeight="27.0" prefWidth="183.0" text="Gejala">
+               <font>
+                  <Font name="PT Sans" size="18.0" />
+               </font>
+            </Label>
+            <PieChart fx:id="pcGejala" layoutX="43.0" layoutY="70.0" prefHeight="257.0" prefWidth="332.0" />
+         </children>
+      </Pane>
+      <Pane layoutX="902.0" layoutY="18.0" prefHeight="362.0" prefWidth="418.0" style="-fx-background-radius: 10; -fx-background-color: white;">
+         <effect>
+            <DropShadow offsetX="3.0" offsetY="3.0">
+               <color>
+                  <Color opacity="0.5" />
+               </color></DropShadow>
+         </effect>
+         <children>
+            <Label alignment="CENTER" layoutX="141.0" layoutY="14.0" prefHeight="23.0" prefWidth="137.0" text="Mood">
+               <font>
+                  <Font name="PT Sans" size="18.0" />
+               </font>
+            </Label>
+            <LineChart fx:id="chartMood" layoutX="29.0" layoutY="80.0" prefHeight="246.0" prefWidth="361.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </LineChart>
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>

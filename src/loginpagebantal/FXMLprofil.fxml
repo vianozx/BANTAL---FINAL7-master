@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="590.0" prefWidth="925.0" style="-fx-background-color: #EAF5E8 #EAF5E8;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginpagebantal.FXMLprofilController">
+   <children>
+      <Pane layoutX="27.0" layoutY="24.0" prefHeight="540.0" prefWidth="869.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.5" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <ImageView fitHeight="182.0" fitWidth="273.0" layoutX="24.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/su-san-lee-g3PyXO4A0yc-unsplash.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="182.0" fitWidth="273.0" layoutX="297.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/su-san-lee-g3PyXO4A0yc-unsplash.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="182.0" fitWidth="273.0" layoutX="570.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/su-san-lee-g3PyXO4A0yc-unsplash.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="93.0" fitWidth="89.0" layoutX="55.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/man.png" />
+               </image>
+               <effect>
+                  <DropShadow offsetX="3.0" offsetY="3.0">
+                     <color>
+                        <Color opacity="0.5" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </ImageView>
+            <Text layoutX="156.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font name="Avenir Next Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text layoutX="159.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pelajar">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font>
+            </Text>
+            <Text layoutX="221.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Indonesia, Yogyakarta">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="13.0" fitWidth="13.0" layoutX="208.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/map.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="tfTanggalLahir" layoutX="158.0" layoutY="284.0" prefHeight="26.0" prefWidth="230.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 8;" />
+            <Text layoutX="56.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tanggal Lahir">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font></Text>
+            <TextField fx:id="tfEmail" layoutX="157.0" layoutY="331.0" prefHeight="26.0" prefWidth="230.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 8;" />
+            <Text layoutX="56.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font>
+            </Text>
+            <Text layoutX="54.0" layoutY="396.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font>
+            </Text>
+            <TextField fx:id="Jenkelamin" layoutX="158.0" layoutY="430.0" prefHeight="26.0" prefWidth="230.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 8;" />
+            <Text layoutX="53.0" layoutY="447.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jenis Kelamin">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font>
+            </Text>
+            <TextField fx:id="tfNoHP" layoutX="158.0" layoutY="478.0" prefHeight="26.0" prefWidth="230.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 8;" />
+            <Text layoutX="54.0" layoutY="496.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No. Handphone">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font>
+            </Text>
+            <PasswordField fx:id="tfpassword" layoutX="157.0" layoutY="381.0" prefHeight="26.0" prefWidth="230.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 8;" />
+            <Button layoutX="356.0" layoutY="288.0" mnemonicParsing="false" onAction="#editTanggalLahir" prefHeight="19.0" prefWidth="28.0" style="-fx-background-color: white;" text="Edit" textFill="#5dd1a9" underline="true">
+               <font>
+                  <Font name="PT Sans" size="9.0" />
+               </font>
+            </Button>
+            <Button layoutX="356.0" layoutY="334.0" mnemonicParsing="false" onAction="#editEmail" prefHeight="19.0" prefWidth="28.0" style="-fx-background-color: white;" text="Edit" textFill="#5dd1a9" underline="true">
+               <font>
+                  <Font name="PT Sans" size="9.0" />
+               </font>
+            </Button>
+            <Button layoutX="356.0" layoutY="384.0" mnemonicParsing="false" onAction="#editpassword" prefHeight="19.0" prefWidth="28.0" style="-fx-background-color: white;" text="Edit" textFill="#5dd1a9" underline="true">
+               <font>
+                  <Font name="PT Sans" size="9.0" />
+               </font>
+            </Button>
+            <Button layoutX="356.0" layoutY="481.0" mnemonicParsing="false" onAction="#editnohp" prefHeight="19.0" prefWidth="28.0" style="-fx-background-color: white;" text="Edit" textFill="#5dd1a9" underline="true">
+               <font>
+                  <Font name="PT Sans" size="9.0" />
+               </font>
+            </Button>
+            <TextField fx:id="tfRiwayat" layoutX="580.0" layoutY="271.0" prefHeight="26.0" prefWidth="230.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 8;" />
+            <Text layoutX="419.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Riwayat Kesehatan Mental">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font>
+            </Text>
+            <TextField fx:id="tfPekerjaan" layoutX="580.0" layoutY="321.0" prefHeight="26.0" prefWidth="230.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 8;" />
+            <Text layoutX="419.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pekerjaan">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font>
+            </Text>
+            <Text layoutX="418.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kota/Kabupaten">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font>
+            </Text>
+            <TextField fx:id="tKota" layoutX="579.0" layoutY="371.0" prefHeight="26.0" prefWidth="230.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 8;" />
+            <Button layoutX="776.0" layoutY="275.0" mnemonicParsing="false" onAction="#editriwayatkesehatanmental" prefHeight="19.0" prefWidth="28.0" style="-fx-background-color: white;" text="Edit" textFill="#5dd1a9" underline="true">
+               <font>
+                  <Font name="PT Sans" size="9.0" />
+               </font>
+            </Button>
+            <Button layoutX="777.0" layoutY="325.0" mnemonicParsing="false" onAction="#editpekerjaan" prefHeight="19.0" prefWidth="28.0" style="-fx-background-color: white;" text="Edit" textFill="#5dd1a9" underline="true">
+               <font>
+                  <Font name="PT Sans" size="9.0" />
+               </font>
+            </Button>
+            <Button layoutX="777.0" layoutY="375.0" mnemonicParsing="false" onAction="#editkota" prefHeight="19.0" prefWidth="28.0" style="-fx-background-color: white;" text="Edit" textFill="#5dd1a9" underline="true">
+               <font>
+                  <Font name="PT Sans" size="9.0" />
+               </font>
+            </Button>
+            <TextField fx:id="tfNama" layoutX="150.0" layoutY="205.0" prefHeight="27.0" prefWidth="103.0" style="-fx-background-color: white;">
+               <font>
+                  <Font name="PT Sans" size="14.0" />
+               </font>
+            </TextField>
+            <Button layoutX="356.0" layoutY="433.0" mnemonicParsing="false" onAction="#editjeniskelamin" prefHeight="19.0" prefWidth="28.0" style="-fx-background-color: white;" text="Edit" textFill="#5dd1a9" underline="true">
+               <font>
+                  <Font name="PT Sans" size="9.0" />
+               </font>
+            </Button>
+            <Button fx:id="logout" layoutX="720.0" layoutY="476.0" mnemonicParsing="false" onAction="#keluar" prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #4DD1A9; -fx-background-radius: 8;" text="        Logout" />
+            <ImageView fitHeight="19.0" fitWidth="19.0" layoutX="732.0" layoutY="480.0" opacity="0.58" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/logout.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

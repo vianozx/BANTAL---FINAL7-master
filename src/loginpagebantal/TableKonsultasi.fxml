@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="610.0" prefWidth="925.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginpagebantal.TableKonsultasiController">
+   <children>
+      <Pane layoutX="32.0" layoutY="29.0" prefHeight="553.0" prefWidth="862.0" style="-fx-background-color: EAF5E8; -fx-background-radius: 20;">
+         <children>
+            <Button fx:id="Simpan" layoutX="36.0" layoutY="32.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="85.0" style="-fx-background-color: #4DD1A9;" text="Simpan">
+               <effect>
+                  <DropShadow offsetX="2.0" offsetY="2.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <TableView fx:id="TableKonsultasi" layoutX="34.0" layoutY="77.0" prefHeight="422.0" prefWidth="795.0" stylesheets="@../css/csstableview.css">
+              <columns>
+                <TableColumn fx:id="Alamat" prefWidth="209.5999984741211" text="Alamat" />
+                  <TableColumn fx:id="Keluhan" minWidth="0.0" prefWidth="236.800048828125" text="Keluhan" />
+                  <TableColumn fx:id="Tanggalhari" prefWidth="147.99996948242188" text="Tanggal &amp; Hari" />
+                  <TableColumn fx:id="tatapmuka" prefWidth="91.2000732421875" text="Tatap Muka " />
+                  <TableColumn fx:id="tcwaktu" prefWidth="117.5999755859375" text="Waktu" />
+              </columns>
+            </TableView>
+            <Button fx:id="Simpan1" layoutX="129.0" layoutY="32.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="85.0" style="-fx-background-color: #4DD1A9;" text="Edit">
+               <effect>
+                  <DropShadow offsetX="2.0" offsetY="2.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="Simpan11" layoutX="225.0" layoutY="32.0" mnemonicParsing="false" onAction="#hapusButton" prefHeight="31.0" prefWidth="85.0" style="-fx-background-color: #4DD1A9;" text="Hapus">
+               <effect>
+                  <DropShadow offsetX="2.0" offsetY="2.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

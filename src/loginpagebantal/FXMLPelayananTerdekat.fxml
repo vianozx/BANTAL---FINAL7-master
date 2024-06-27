@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="740.0" prefWidth="1200.0" style="-fx-background-color: EAF5E8;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginpagebantal.FXMLPelayananTerdekatController">
+   <children>
+      <Pane prefHeight="130.0" prefWidth="1200.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="130.0" fitWidth="156.0" layoutX="67.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/Bantuan%20Kesehatan%20Mental-2.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="341.0" layoutY="50.0" mnemonicParsing="false" style="-fx-background-color: white;" text="Pelayanan Terdekat">
+               <font>
+                  <Font name="PT Sans" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="Diskusi" layoutX="492.0" layoutY="49.0" mnemonicParsing="false" onAction="#diskusi" style="-fx-background-color: white;" text="Diskusi">
+               <font>
+                  <Font name="PT Sans" size="14.0" />
+               </font>
+            </Button>
+            <TextField layoutX="874.0" layoutY="50.0" prefWidth="244.0" />
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+      <Pane layoutX="55.0" layoutY="158.0" prefHeight="314.0" prefWidth="283.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <effect>
+            <DropShadow offsetX="3.0" offsetY="3.0">
+               <color>
+                  <Color opacity="0.5" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <ImageView fitHeight="213.0" fitWidth="282.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/undraw_Location_search_re_ttoj.png" />
+               </image>
+            </ImageView>
+            <Text fill="#5dd1a9" layoutX="25.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cari Pelayanan">
+               <font>
+                  <Font name="Avenir Next Bold" size="24.0" />
+               </font>
+            </Text>
+            <Text fill="#5dd1a9" layoutX="25.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Terdekat Disini">
+               <font>
+                  <Font name="Avenir Next Bold" size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="389.0" layoutY="158.0" prefHeight="170.0" prefWidth="170.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <effect>
+            <DropShadow offsetX="3.0" offsetY="3.0">
+               <color>
+                  <Color opacity="0.5" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="50.0" layoutX="12.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/hospital-2.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="11.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RS. Bethesda">
+               <font>
+                  <Font name="PT Sans" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="#00000066" layoutX="11.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Klinik Psikologi">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font>
+            </Text>
+            <Button fx:id="loc1" alignment="BASELINE_LEFT" layoutX="6.0" layoutY="132.0" mnemonicParsing="false" onAction="#loc1" prefHeight="26.0" prefWidth="157.0" style="-fx-background-color: white;" text="      Lihat Map" textFill="#5dd1a9">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="8.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/map-2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="121.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/next.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="584.0" layoutY="160.0" prefHeight="170.0" prefWidth="170.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <effect>
+            <DropShadow offsetX="3.0" offsetY="3.0">
+               <color>
+                  <Color opacity="0.5" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="50.0" layoutX="12.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/hospital-8.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="11.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Psikolog Nadia">
+               <font>
+                  <Font name="PT Sans" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="#00000066" layoutX="11.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Praktik Psikolog">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font>
+            </Text>
+            <Button fx:id="loc2" alignment="BASELINE_LEFT" layoutX="6.0" layoutY="132.0" mnemonicParsing="false" onAction="#loc2" prefHeight="26.0" prefWidth="157.0" style="-fx-background-color: white;" text="      Lihat Map" textFill="#5dd1a9">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="8.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/map-2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="121.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/next.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="779.0" layoutY="160.0" prefHeight="170.0" prefWidth="170.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <effect>
+            <DropShadow offsetX="3.0" offsetY="3.0">
+               <color>
+                  <Color opacity="0.5" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="50.0" layoutX="12.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/hospital-10.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="11.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Puri Nirmala">
+               <font>
+                  <Font name="PT Sans" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="#00000066" layoutX="11.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rumah Sakit Jiwa">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font>
+            </Text>
+            <Button fx:id="loc3" alignment="BASELINE_LEFT" layoutX="6.0" layoutY="132.0" mnemonicParsing="false" onAction="#loc3" prefHeight="26.0" prefWidth="157.0" style="-fx-background-color: white;" text="      Lihat Map" textFill="#5dd1a9">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="8.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/map-2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="121.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/next.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="974.0" layoutY="162.0" prefHeight="170.0" prefWidth="170.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <effect>
+            <DropShadow offsetX="3.0" offsetY="3.0">
+               <color>
+                  <Color opacity="0.5" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="50.0" layoutX="12.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/hospital-3.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="11.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mandiri Christina">
+               <font>
+                  <Font name="PT Sans" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="#00000066" layoutX="11.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Praktik Psikolog">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font>
+            </Text>
+            <Button fx:id="loc4" alignment="BASELINE_LEFT" layoutX="6.0" layoutY="132.0" mnemonicParsing="false" onAction="#loc4" prefHeight="26.0" prefWidth="157.0" style="-fx-background-color: white;" text="      Lihat Map" textFill="#5dd1a9">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="8.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/map-2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="121.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/next.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="389.0" layoutY="352.0" prefHeight="170.0" prefWidth="170.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <effect>
+            <DropShadow offsetX="3.0" offsetY="3.0">
+               <color>
+                  <Color opacity="0.5" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="50.0" layoutX="12.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/hospital-7.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="11.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Setiyo Purwanto MSi.">
+               <font>
+                  <Font name="PT Sans" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="#00000066" layoutX="11.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Praktik Psikolog">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font>
+            </Text>
+            <Button fx:id="loc5" alignment="BASELINE_LEFT" layoutX="6.0" layoutY="132.0" mnemonicParsing="false" onAction="#loc5" prefHeight="26.0" prefWidth="157.0" style="-fx-background-color: white;" text="      Lihat Map" textFill="#5dd1a9">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="8.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/map-2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="121.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/next.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="584.0" layoutY="354.0" prefHeight="170.0" prefWidth="170.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <effect>
+            <DropShadow offsetX="3.0" offsetY="3.0">
+               <color>
+                  <Color opacity="0.5" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="50.0" layoutX="12.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/hospital-4.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="11.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sakina">
+               <font>
+                  <Font name="PT Sans" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="#00000066" layoutX="11.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Biro Layanan Psikologi">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font>
+            </Text>
+            <Button fx:id="loc6" alignment="BASELINE_LEFT" layoutX="6.0" layoutY="132.0" mnemonicParsing="false" onAction="#loc6" prefHeight="26.0" prefWidth="157.0" style="-fx-background-color: white;" text="      Lihat Map" textFill="#5dd1a9">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="8.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/map-2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="121.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/next.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="779.0" layoutY="354.0" prefHeight="170.0" prefWidth="170.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <effect>
+            <DropShadow offsetX="3.0" offsetY="3.0">
+               <color>
+                  <Color opacity="0.5" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="50.0" layoutX="12.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/hospital-11.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="11.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WASKITA">
+               <font>
+                  <Font name="PT Sans" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="#00000066" layoutX="11.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Biro Konsultan Psikologi ">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font>
+            </Text>
+            <Button fx:id="loc7" alignment="BASELINE_LEFT" layoutX="6.0" layoutY="132.0" mnemonicParsing="false" onAction="#loc7" prefHeight="26.0" prefWidth="157.0" style="-fx-background-color: white;" text="      Lihat Map" textFill="#5dd1a9">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="8.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/map-2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="121.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/next.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="974.0" layoutY="356.0" prefHeight="170.0" prefWidth="170.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <effect>
+            <DropShadow offsetX="3.0" offsetY="3.0">
+               <color>
+                  <Color opacity="0.5" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="50.0" layoutX="12.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/medical-center.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="11.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rumah Mentari">
+               <font>
+                  <Font name="PT Sans" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="#00000066" layoutX="11.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Layanan Psikologi">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font>
+            </Text>
+            <Button fx:id="loc8" alignment="BASELINE_LEFT" layoutX="6.0" layoutY="132.0" mnemonicParsing="false" onAction="#loc8" prefHeight="26.0" prefWidth="157.0" style="-fx-background-color: white;" text="      Lihat Map" textFill="#5dd1a9">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="8.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/map-2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="121.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/next.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="389.0" layoutY="546.0" prefHeight="170.0" prefWidth="170.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <effect>
+            <DropShadow offsetX="3.0" offsetY="3.0">
+               <color>
+                  <Color opacity="0.5" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="50.0" layoutX="12.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/hospital-building.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="11.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ARCHANA">
+               <font>
+                  <Font name="PT Sans" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="#00000066" layoutX="11.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Biro Psikologi Riset">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font>
+            </Text>
+            <Button fx:id="loc9" alignment="BASELINE_LEFT" layoutX="6.0" layoutY="132.0" mnemonicParsing="false" onAction="#loc9" prefHeight="26.0" prefWidth="157.0" style="-fx-background-color: white;" text="      Lihat Map" textFill="#5dd1a9">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="8.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/map-2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="121.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/next.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="584.0" layoutY="548.0" prefHeight="170.0" prefWidth="170.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <effect>
+            <DropShadow offsetX="3.0" offsetY="3.0">
+               <color>
+                  <Color opacity="0.5" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="50.0" layoutX="12.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/hospital-12.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="11.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kencana">
+               <font>
+                  <Font name="PT Sans" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="#00000066" layoutX="11.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Biro Konsultasi Psikologi">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font>
+            </Text>
+            <Button fx:id="loc10" alignment="BASELINE_LEFT" layoutX="6.0" layoutY="132.0" mnemonicParsing="false" onAction="#loc10" prefHeight="26.0" prefWidth="157.0" style="-fx-background-color: white;" text="      Lihat Map" textFill="#5dd1a9">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="8.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/map-2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="121.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/next.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="779.0" layoutY="548.0" prefHeight="170.0" prefWidth="170.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <effect>
+            <DropShadow offsetX="3.0" offsetY="3.0">
+               <color>
+                  <Color opacity="0.5" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="50.0" layoutX="12.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/hospital-13.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="11.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Smart Solinfo &#10;Consultama">
+               <font>
+                  <Font name="PT Sans" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="#00000066" layoutX="11.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Biro Psikologi">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font>
+            </Text>
+            <Button fx:id="loc11" alignment="BASELINE_LEFT" layoutX="6.0" layoutY="132.0" mnemonicParsing="false" onAction="#loc11" prefHeight="26.0" prefWidth="157.0" style="-fx-background-color: white;" text="      Lihat Map" textFill="#5dd1a9">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="8.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/map-2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="121.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/next.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="974.0" layoutY="550.0" prefHeight="170.0" prefWidth="170.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <effect>
+            <DropShadow offsetX="3.0" offsetY="3.0">
+               <color>
+                  <Color opacity="0.5" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="50.0" layoutX="12.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/hospital-14.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="11.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pranatama">
+               <font>
+                  <Font name="PT Sans" size="15.0" />
+               </font>
+            </Text>
+            <Text fill="#00000066" layoutX="11.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lembaga Psikologi &#10;Terapan">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="8.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/map-2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="121.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/next.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="55.0" layoutY="491.0" prefHeight="224.0" prefWidth="283.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <effect>
+            <DropShadow offsetX="3.0" offsetY="3.0">
+               <color>
+                  <Color opacity="0.5" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <ImageView fitHeight="155.0" fitWidth="283.0" layoutX="-2.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/undraw_Navigation_re_wxx4.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Button fx:id="loc12" alignment="BASELINE_LEFT" layoutX="916.0" layoutY="743.0" mnemonicParsing="false" onAction="#loc12" prefHeight="26.0" prefWidth="157.0" style="-fx-background-color: white;" text="      Lihat Map" textFill="#5dd1a9">
+         <font>
+            <Font name="PT Sans" size="13.0" />
+         </font>
+      </Button>
+      </children>
+</AnchorPane>

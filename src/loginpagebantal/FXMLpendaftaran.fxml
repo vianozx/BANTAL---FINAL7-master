@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="1200.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginpagebantal.PendaftaranController">
+   <children>
+      <Label fx:id="label" alignment="TOP_CENTER" layoutX="-329.0" layoutY="280.0" text="Daftar">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfNama" layoutX="58.0" layoutY="218.0" prefHeight="34.0" prefWidth="274.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 8;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="504.0" fitWidth="504.0" layoutX="671.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../gambar/2853458.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="tfEmail" layoutX="58.0" layoutY="287.0" prefHeight="34.0" prefWidth="274.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 8;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="tfpassword" layoutX="58.0" layoutY="357.0" prefHeight="34.0" prefWidth="274.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 8;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="tfTanggalLahir" layoutX="58.0" layoutY="426.0" prefHeight="34.0" prefWidth="274.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 8;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <ChoiceBox fx:id="tfRiwayat" layoutX="362.0" layoutY="217.0" prefHeight="34.0" prefWidth="274.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 8;" />
+      <TextField fx:id="tfPekerjaan" layoutX="362.0" layoutY="287.0" prefHeight="34.0" prefWidth="274.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 8;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="tfNoHP" layoutX="362.0" layoutY="357.0" prefHeight="34.0" prefWidth="274.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 8;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="tKota" layoutX="362.0" layoutY="426.0" prefHeight="34.0" prefWidth="274.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 8;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Pane layoutX="57.0" layoutY="499.0" prefHeight="45.0" prefWidth="274.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 8;">
+         <children>
+            <RadioButton fx:id="rbPria" layoutX="20.0" layoutY="11.0" mnemonicParsing="false" text="Laki-laki">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="kelam" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="rbWanita" layoutX="139.0" layoutY="11.0" mnemonicParsing="false" text="Perempuan" toggleGroup="$kelam">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </Pane>
+      <Text fill="#5dd1a9" layoutX="56.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Daftar ke BANTAL">
+         <font>
+            <Font name="Avenir Next Bold" size="40.0" />
+         </font>
+      </Text>
+      <Button fx:id="SImpan" layoutX="362.0" layoutY="504.0" mnemonicParsing="false" onAction="#simpanButton" prefHeight="34.0" prefWidth="274.0" style="-fx-background-color: #5dd1a9;" text="Simpan">
+         <font>
+            <Font name="PT Sans" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="532.0" layoutY="546.0" mnemonicParsing="false" style="-fx-background-color: white;" text="Login" textFill="#5dd1a9" />
+      <Text layoutX="57.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nama">
+         <font>
+            <Font name="PT Sans" size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="58.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+         <font>
+            <Font name="PT Sans" size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="58.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+         <font>
+            <Font name="PT Sans" size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="58.0" layoutY="417.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tanggal Lahir (dd/mm/yyyy)">
+         <font>
+            <Font name="PT Sans" size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="58.0" layoutY="486.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jenis Kelamin">
+         <font>
+            <Font name="PT Sans" size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="362.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Riwayat Kesehatan Mental">
+         <font>
+            <Font name="PT Sans" size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="361.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pekerjaan">
+         <font>
+            <Font name="PT Sans" size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="362.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No Handphone">
+         <font>
+            <Font name="PT Sans" size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="362.0" layoutY="417.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kota/Kabupaten">
+         <font>
+            <Font name="PT Sans" size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="420.0" layoutY="564.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sudah punya akun?">
+         <font>
+            <Font name="PT Sans" size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

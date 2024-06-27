@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="590.0" prefWidth="925.0" style="-fx-background-color: #EAF5E8 #EAF5E8;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginpagebantal.FXMLKonsultasiController">
+   <children>
+      <Pane layoutX="28.0" layoutY="31.0" prefHeight="526.0" prefWidth="867.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.5" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <ImageView fitHeight="501.0" fitWidth="506.0" layoutX="358.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../gambar/undraw_Uploading_re_okvh.png" />
+               </image>
+            </ImageView>
+            <Text fill="#5dd1a9" layoutX="32.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Isi Formulir Konsultasi">
+               <font>
+                  <Font name="Avenir Next Bold" size="25.0" />
+               </font>
+            </Text>
+            <DatePicker fx:id="kstanggal" layoutX="32.0" layoutY="72.0" prefHeight="28.0" prefWidth="325.0" style="-fx-background-color: white; -fx-border-color: black; -fx-background-radius: 8;" />
+            <Text layoutX="32.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pilih Tanggal">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font>
+            </Text>
+            <Text layoutX="32.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pilih Waktu">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font>
+            </Text>
+            <ChoiceBox fx:id="ksWaktu" layoutX="32.0" layoutY="126.0" prefHeight="28.0" prefWidth="325.0" style="-fx-border-color: black; -fx-background-color: white; -fx-border-radius: 8;" />
+            <Pane layoutX="32.0" layoutY="165.0" prefHeight="58.0" prefWidth="175.0" style="-fx-background-color: white; -fx-border-color: black;" />
+            <Text layoutX="54.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Konsultasi Tatap Muka">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font>
+            </Text>
+            <CheckBox fx:id="kstatapmuka" layoutX="95.0" layoutY="191.0" mnemonicParsing="false" onAction="#checkboxttpmka" prefHeight="26.0" prefWidth="57.0" text="Iya">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font>
+            </CheckBox>
+            <Text layoutX="32.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pilih Alamat">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font>
+            </Text>
+            <ChoiceBox fx:id="ksAlamat" layoutX="32.0" layoutY="250.0" prefHeight="28.0" prefWidth="325.0" style="-fx-border-color: black; -fx-background-color: white; -fx-border-radius: 8;" />
+            <Text layoutX="32.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Keluhan">
+               <font>
+                  <Font name="PT Sans" size="13.0" />
+               </font>
+            </Text>
+            <TextField fx:id="ksKeluhan" alignment="TOP_LEFT" layoutX="32.0" layoutY="306.0" prefHeight="158.0" prefWidth="325.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 8;" />
+            <Button fx:id="kssimpan" layoutX="120.0" layoutY="478.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#simpanButton" prefHeight="26.0" prefWidth="65.0" style="-fx-background-color: #5dd1a9;" text="Simpan" />
+            <Button fx:id="kslanjut" layoutX="195.0" layoutY="478.0" mnemonicParsing="false" onAction="#scene3" prefHeight="26.0" prefWidth="65.0" style="-fx-background-color: #5dd1a9;" text="Lanjut" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

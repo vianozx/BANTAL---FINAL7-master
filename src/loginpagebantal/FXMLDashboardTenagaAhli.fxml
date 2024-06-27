@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="740.0" prefWidth="1200.0" style="-fx-background-color: EAF5E8;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginpagebantal.FXMLDashboardTenagaAhliController">
+   <children>
+      <BorderPane fx:id="mainPane" prefHeight="740.0" prefWidth="1200.0" style="-fx-background-color: EAF5E8EAF5E8;">
+         <left>
+            <VBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="610.0" prefWidth="275.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="275.0">
+                     <children>
+                        <ImageView fitHeight="76.0" fitWidth="76.0" layoutX="97.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/man.png" />
+                           </image>
+                        </ImageView>
+                        <Line endX="186.0" layoutX="89.0" layoutY="147.0" startX="-100.0" />
+                        <Button fx:id="Dash" alignment="BASELINE_LEFT" layoutX="12.0" layoutY="178.0" mnemonicParsing="false" onAction="#Dashboardtnahli" prefHeight="35.0" prefWidth="208.0" style="-fx-background-color: white;" text="           Dasbor">
+                           <font>
+                              <Font name="PT Sans" size="16.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="profil" alignment="BASELINE_LEFT" layoutX="12.0" layoutY="228.0" mnemonicParsing="false" onAction="#sceneProfil" prefHeight="35.0" prefWidth="208.0" style="-fx-background-color: white;" text="           Profil">
+                           <font>
+                              <Font name="PT Sans" size="16.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="29.0" layoutY="183.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/dashboard.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="29.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/user.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="namaUser" alignment="CENTER" layoutX="11.0" layoutY="110.0" prefHeight="25.0" prefWidth="254.0" textAlignment="CENTER">
+                           <font>
+                              <Font size="16.0" />
+                           </font></Label>
+                     </children>
+                  </Pane>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </VBox>
+         </left>
+         <top>
+            <HBox prefHeight="130.0" prefWidth="1530.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <ImageView fitHeight="130.0" fitWidth="156.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../gambar/Bantuan%20Kesehatan%20Mental-2.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="60.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Button mnemonicParsing="false" style="-fx-background-color: white;" text="Tentang Kami">
+                     <HBox.margin>
+                        <Insets left="90.0" top="50.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="PT Sans" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" style="-fx-background-color: white;" text="Pelayanan Terdekat">
+                     <HBox.margin>
+                        <Insets left="20.0" top="50.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="PT Sans" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" style="-fx-background-color: white;" text="Diskusi">
+                     <font>
+                        <Font name="PT Sans" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" top="50.0" />
+                     </HBox.margin>
+                  </Button>
+                  <TextField prefHeight="26.0" prefWidth="244.0">
+                     <HBox.margin>
+                        <Insets left="225.0" top="50.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+         </top>
+         <right>
+            <HBox prefHeight="610.0" prefWidth="278.0" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets left="-330.0" />
+               </BorderPane.margin>
+            </HBox>
+         </right>
+         <center>
+            <Pane prefHeight="610.0" prefWidth="908.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane layoutX="16.0" layoutY="32.0" prefHeight="255.0" prefWidth="555.0" style="-fx-background-color: #F9FCF8 #F9FCF8 #F9FCF8 #F9FCF8; -fx-background-radius: 20;">
+                     <children>
+                        <Text layoutX="208.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kunjungan Pasien">
+                           <font>
+                              <Font name="PT Sans" size="18.0" />
+                           </font>
+                        </Text>
+                        <LineChart fx:id="lcKunjungan" layoutX="26.0" layoutY="40.0" prefHeight="201.0" prefWidth="488.0">
+                          <xAxis>
+                            <CategoryAxis side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis side="LEFT" />
+                          </yAxis>
+                        </LineChart>
+                     </children>
+                     <effect>
+                        <DropShadow offsetX="3.0" offsetY="3.0">
+                           <color>
+                              <Color opacity="0.5" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Pane>
+                  <Pane layoutX="17.0" layoutY="307.0" prefHeight="268.0" prefWidth="888.0" style="-fx-background-color: #F9FCF8 #F9FCF8 #F9FCF8 #F9FCF8; -fx-background-radius: 20;">
+                     <children>
+                        <Text layoutX="378.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jadwal Konsultasi">
+                           <font>
+                              <Font name="PT Sans" size="18.0" />
+                           </font>
+                        </Text>
+                        <TableView fx:id="TableKonsultasi" layoutX="19.0" layoutY="50.0" prefHeight="200.0" prefWidth="848.0" stylesheets="@../css/csstableview.css">
+                          <columns>
+                            <TableColumn fx:id="Alamat" prefWidth="260.872314453125" text="Alamat" />
+                            <TableColumn fx:id="Keluhan" prefWidth="194.0" text="Keluhan" />
+                              <TableColumn fx:id="Tanggalhari" prefWidth="156.50006103515625" text="Tanggal &amp; Hari" />
+                              <TableColumn fx:id="tatapmuka" prefWidth="120.39801025390625" text="Tatap Muka" />
+                              <TableColumn fx:id="tcwaktu" prefWidth="120.39801025390625" text="Waktu" />
+                          </columns>
+                        </TableView>
+                     </children>
+                     <effect>
+                        <DropShadow offsetX="3.0" offsetY="3.0">
+                           <color>
+                              <Color opacity="0.5" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Pane>
+                  <Pane layoutX="588.0" layoutY="32.0" prefHeight="255.0" prefWidth="318.0" style="-fx-background-color: #F9FCF8 #F9FCF8 #F9FCF8 #F9FCF8; -fx-background-radius: 20;">
+                     <children>
+                        <Text layoutX="17.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Review Pasien">
+                           <font>
+                              <Font name="PT Sans" size="18.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="18.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/astronaut.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="70.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vahri Maulana">
+                           <font>
+                              <Font name="PT Sans" size="13.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#00000080" layoutX="70.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pekerja Swasta">
+                           <font>
+                              <Font name="PT Sans" size="12.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="204.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/star.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="224.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/star.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="244.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/star.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="264.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/star.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="284.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/star.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="18.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/man-2.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="70.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fikri Achmad Fauzi">
+                           <font>
+                              <Font name="PT Sans" size="13.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#00000080" layoutX="70.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mahasiswa">
+                           <font>
+                              <Font name="PT Sans" size="12.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="204.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/star.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="224.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/star.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="244.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/star.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="264.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/star.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="284.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/star.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="18.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/gamer.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="70.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Octaviano Ginanjar">
+                           <font>
+                              <Font name="PT Sans" size="13.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#00000080" layoutX="70.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mahasiswa">
+                           <font>
+                              <Font name="PT Sans" size="12.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="204.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/star.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="224.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/star.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="244.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/star.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="264.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/star.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="284.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/star.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="18.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/woman.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="70.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fahni Maharani">
+                           <font>
+                              <Font name="PT Sans" size="13.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#00000080" layoutX="70.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mahasiswa">
+                           <font>
+                              <Font name="PT Sans" size="12.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="204.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/star.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="224.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/star.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="244.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/star.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="264.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/star.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="284.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/star.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <effect>
+                        <DropShadow offsetX="3.0" offsetY="3.0">
+                           <color>
+                              <Color opacity="0.5" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Pane>
+               </children></Pane>
+         </center>
+         
+      </BorderPane>
+      </children>
+</AnchorPane>

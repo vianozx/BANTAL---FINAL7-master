@@ -1,0 +1,27 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jun 24, 2022, 4:25:26 PM
+    Author     : MSI
+*/
+/*******************************************************************************
+ *           
+    *I will provide this
+ * Tables                                      *
+ *                                                                             *
+ ******************************************************************************/
+table-view{
+    -fx-background-radius: 25px;
+}
+
+.table-view .column-header-background{
+    -fx-background-color:  #5DD1A9;
+    -fx-background-radius: 0px 0px 0px 0px;
+}
+ 
+.table-view .column-header, .table-view.filler{
+    -fx-background-color:  transparent;
+    -fx-size: 30;
+}

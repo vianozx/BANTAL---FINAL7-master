@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="1200.0" style="-fx-background-color: EAF5E8;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginpagebantal.ForumDiskusiController">
+   <children>
+      <BorderPane maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="1440.0" style="-fx-background-color: EAF5E8EAF5E8;">
+         <top>
+            <HBox maxWidth="-Infinity" minWidth="-Infinity" prefHeight="130.0" prefWidth="1200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <Pane minWidth="-Infinity" prefHeight="130.0" prefWidth="1200.0">
+                     <children>
+                        <Button layoutX="65.0" layoutY="24.0" mnemonicParsing="false" prefHeight="88.0" prefWidth="161.0" style="-fx-background-color: white;" text="Button" />
+                        <ImageView fitHeight="130.0" fitWidth="156.0" layoutX="67.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/Bantuan%20Kesehatan%20Mental-2.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="PelayananTerdekat" layoutX="330.0" layoutY="52.0" mnemonicParsing="false" onAction="#scene6" style="-fx-background-color: white;" text="Pelayanan Terdekat">
+                           <font>
+                              <Font name="PT Sans" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="483.0" layoutY="52.0" mnemonicParsing="false" style="-fx-background-color: white;" text="Diskusi">
+                           <font>
+                              <Font name="PT Sans" size="14.0" />
+                           </font>
+                        </Button>
+                        <TextField layoutX="875.0" layoutY="52.0" prefWidth="244.0" />
+                        <Button layoutX="45.0" layoutY="14.0" mnemonicParsing="false" opacity="0.0" prefHeight="103.0" prefWidth="197.0" text="Button" />
+                     </children>
+                  </Pane>
+               </children>
+               <BorderPane.margin>
+                  <Insets right="240.0" />
+               </BorderPane.margin>
+            </HBox>
+         </top>
+         <left>
+            <VBox prefHeight="610.0" prefWidth="311.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="260.0" prefWidth="238.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+                     <VBox.margin>
+                        <Insets left="37.0" top="25.0" />
+                     </VBox.margin>
+                     <children>
+                        <Button alignment="TOP_LEFT" layoutX="18.0" layoutY="52.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="130.0" style="-fx-background-color: white;" text="        Semua Diskusi" textAlignment="RIGHT">
+                           <font>
+                              <Font name="PT Sans" size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets top="5.0" />
+                           </padding></Button>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="17.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/conversations.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="17.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kategori">
+                           <font>
+                              <Font name="Avenir Next Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <Line endX="152.0" layoutX="86.0" layoutY="40.0" startX="-86.00000762939453" />
+                        <Button alignment="TOP_LEFT" layoutX="18.0" layoutY="91.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="119.0" style="-fx-background-color: white;" text="        Kecemasan" textAlignment="RIGHT">
+                           <font>
+                              <Font name="PT Sans" size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets top="5.0" />
+                           </padding></Button>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="17.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/anxiety.png" />
+                           </image>
+                        </ImageView>
+                        <Button alignment="TOP_LEFT" layoutX="18.0" layoutY="131.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="119.0" style="-fx-background-color: white;" text="        Kepribadian" textAlignment="RIGHT">
+                           <font>
+                              <Font name="PT Sans" size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets top="5.0" />
+                           </padding></Button>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="17.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/personality-disorder.png" />
+                           </image>
+                        </ImageView>
+                        <Button alignment="TOP_LEFT" layoutX="18.0" layoutY="171.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="119.0" style="-fx-background-color: white;" text="        Suasana Hati" textAlignment="RIGHT">
+                           <font>
+                              <Font name="PT Sans" size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets top="5.0" />
+                           </padding></Button>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="17.0" layoutY="173.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/emotion.png" />
+                           </image>
+                        </ImageView>
+                        <Button alignment="TOP_LEFT" layoutX="18.0" layoutY="211.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="119.0" style="-fx-background-color: white;" text="        Makan" textAlignment="RIGHT">
+                           <font>
+                              <Font name="PT Sans" size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets top="5.0" />
+                           </padding></Button>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="17.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/eating.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <effect>
+                        <DropShadow offsetX="2.0" offsetY="2.0">
+                           <color>
+                              <Color opacity="0.5" />
+                           </color></DropShadow>
+                     </effect>
+                  </Pane>
+                  <Pane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="260.0" prefWidth="238.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+                     <children>
+                        <Text layoutX="17.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Diskusi saat ini">
+                           <font>
+                              <Font name="Avenir Next Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <Line endX="152.0" endY="-3.0517578125E-5" layoutX="86.0" layoutY="40.0" startX="-86.00000762939453" />
+                        <Text layoutX="17.0" layoutY="65.0" nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text="Bagaimana cara mengatasi kesehatan &#10;suasana hati yang tidak stabil?&#10;" wrappingWidth="219.25442504882812">
+                           <font>
+                              <Font name="PT Sans" size="12.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="14.0" fitWidth="14.0" layoutX="18.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/comment-3.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="36.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="459 balasan" wrappingWidth="69.22430419921875">
+                           <font>
+                              <Font name="PT Sans" size="10.0" />
+                           </font>
+                        </Text>
+                        <Line endX="152.0" endY="-3.0517578125E-5" layoutX="86.0" layoutY="115.0" startX="-86.00000762939453" />
+                        <Text layoutX="17.0" layoutY="136.0" nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text="Apa yang harus dilakukan saat sedang &#10;cemas di tempat umum?&#10;" wrappingWidth="219.25442504882812">
+                           <font>
+                              <Font name="PT Sans" size="12.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="14.0" fitWidth="14.0" layoutX="18.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/comment-3.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="37.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="237 balasan" wrappingWidth="62.94532012939453">
+                           <font>
+                              <Font name="PT Sans" size="10.0" />
+                           </font>
+                        </Text>
+                        <Line endX="152.0" endY="-3.0517578125E-5" layoutX="86.0" layoutY="186.0" startX="-86.00000762939453" />
+                        <Text layoutX="17.0" layoutY="206.0" nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text="Apa yang dapat menyebabkan kepriba-&#10;dian seseorang berubah tiba-tiba?&#10;" wrappingWidth="219.25442504882812">
+                           <font>
+                              <Font name="PT Sans" size="12.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="14.0" fitWidth="14.0" layoutX="18.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/comment-3.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="37.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="337 balasan" wrappingWidth="55.36726379394531">
+                           <font>
+                              <Font name="PT Sans" size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="37.0" top="17.0" />
+                     </VBox.margin>
+                     <effect>
+                        <DropShadow offsetX="2.0" offsetY="2.0">
+                           <color>
+                              <Color opacity="0.5" />
+                           </color></DropShadow>
+                     </effect>
+                  </Pane>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <VBox maxWidth="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="1117.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Semua Diskusi">
+                     <font>
+                        <Font name="Avenir Next Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Line endX="685.779296875" startX="-100.0">
+                     <VBox.margin>
+                        <Insets top="9.0" />
+                     </VBox.margin>
+                  </Line>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1098 Pertanyaan">
+                     <VBox.margin>
+                        <Insets top="14.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="PT Sans" size="13.0" />
+                     </font>
+                  </Text>
+                  <Button mnemonicParsing="false" style="-fx-background-color: BBEAD5; -fx-background-radius: 15;" text="Terbaru" textFill="#4dd1a9">
+                     <VBox.margin>
+                        <Insets left="115.0" top="-22.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="PT Sans" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" style="-fx-background-color: #4DD1A9; -fx-background-radius: 15;" text="Populer" textFill="#bbead5">
+                     <VBox.margin>
+                        <Insets left="190.0" top="-26.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="PT Sans" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" style="-fx-background-color: #BBEAD5; -fx-background-radius: 15;" text="Belum ada balasan" textFill="#4dd1a9">
+                     <VBox.margin>
+                        <Insets left="265.0" top="-26.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="PT Sans" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" style="-fx-background-color: #4DD1A9;" text="+ Tanya Pertanyaan">
+                     <VBox.margin>
+                        <Insets left="661.0" top="-75.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="PT Sans" size="13.0" />
+                     </font>
+                  </Button>
+                  <Pane maxWidth="-Infinity" minWidth="-Infinity" prefHeight="137.0" prefWidth="788.0" style="-fx-background-color: WHITE; -fx-background-radius: 10;">
+                     <VBox.margin>
+                        <Insets top="60.0" />
+                     </VBox.margin>
+                     <children>
+                        <ImageView fitHeight="115.0" fitWidth="117.0" layoutX="9.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/dbe9e8b9-e079-4ccc-b306-21fd60785330.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="152.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/man-2.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="187.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fikri Achmad Fauzi">
+                           <font>
+                              <Font name="PT Sans" size="10.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="10.0" fitWidth="10.0" layoutX="187.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/star.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="10.0" fitWidth="10.0" layoutX="200.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/star-2.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="10.0" fitWidth="10.0" layoutX="214.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/star-2.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="10.0" fitWidth="10.0" layoutX="228.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/star-2.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="10.0" fitWidth="10.0" layoutX="242.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/star-2.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="152.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bagaimana cara mengatasi kecemasan berlebihan saat sedang berada di tempat umum?">
+                           <font>
+                              <Font name="Arial Bold" size="13.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="152.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Haloo semua, sebelumnya perkenalkan aku Fikri. Kali ini aku ingin bertanya cara mengatasi kecemasan berlebihan saat &#10;sedang berada di tempat umum. Akhir-akhir ini aku sering mengalami hal tersebut dan itu sangat menggangguku &#10;terlebih lagi saat sedang ada pekerjaan penting.  ">
+                           <font>
+                              <Font name="PT Sans" size="12.0" />
+                           </font>
+                        </Text>
+                        <Circle fill="WHITE" layoutX="161.0" layoutY="121.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+                        <ImageView fitHeight="10.0" fitWidth="10.0" layoutX="156.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/like-2.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="175.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="939">
+                           <font>
+                              <Font name="PT Sans" size="10.0" />
+                           </font>
+                        </Text>
+                        <Circle fill="WHITE" layoutX="214.0" layoutY="121.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+                        <ImageView fitHeight="10.0" fitWidth="10.0" layoutX="209.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/dislike-2.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="228.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="37">
+                           <font>
+                              <Font name="PT Sans" size="10.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="14.0" fitWidth="14.0" layoutX="625.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/chatting.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="642.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="237 balasan">
+                           <font>
+                              <Font name="PT Sans" size="10.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="14.0" fitWidth="14.0" layoutX="699.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/eye.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="716.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1017 dilihat">
+                           <font>
+                              <Font name="PT Sans" size="10.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="701.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7 hari yang lalu">
+                           <font>
+                              <Font name="PT Sans" size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <effect>
+                        <DropShadow offsetX="2.0" offsetY="2.0">
+                           <color>
+                              <Color opacity="0.5" />
+                           </color></DropShadow>
+                     </effect>
+                  </Pane>
+                  <Pane maxWidth="-Infinity" minWidth="-Infinity" prefHeight="137.0" prefWidth="788.0" style="-fx-background-color: WHITE; -fx-background-radius: 10;">
+                     <children>
+                        <ImageView fitHeight="124.0" fitWidth="115.0" layoutX="9.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/f06f5f23-da29-4ee5-8fad-79cdbfa04ae5.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="152.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/woman.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="187.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fahni Maharani">
+                           <font>
+                              <Font name="PT Sans" size="10.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="10.0" fitWidth="10.0" layoutX="187.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/star.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="10.0" fitWidth="10.0" layoutX="200.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/star.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="10.0" fitWidth="10.0" layoutX="214.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/star.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="10.0" fitWidth="10.0" layoutX="228.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/star.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="10.0" fitWidth="10.0" layoutX="242.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/star.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="152.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bagaimana cara mengatasi suasana hati yang tidak stabil?">
+                           <font>
+                              <Font name="Arial Bold" size="13.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="152.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Assalamualaikum semuanya, sebelumnya namaku Fahni, akhir-akhir ini aku sering mengalami suasana hati yang kadang &#10;berubah secara tiba-tiba, hal tersebut sangat menggangguku terutama saat aku ingin tidur, aku sering mengalami &#10;insomnia karena hal tersebut. Nah aku ingin bertanya, apa yang dapat dilakukan untuk mengatasi hal tersebut?&#10;">
+                           <font>
+                              <Font name="PT Sans" size="12.0" />
+                           </font>
+                        </Text>
+                        <Circle fill="WHITE" layoutX="161.0" layoutY="121.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+                        <ImageView fitHeight="10.0" fitWidth="10.0" layoutX="156.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/like-2.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="175.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1017">
+                           <font>
+                              <Font name="PT Sans" size="10.0" />
+                           </font>
+                        </Text>
+                        <Circle fill="WHITE" layoutX="214.0" layoutY="121.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+                        <ImageView fitHeight="10.0" fitWidth="10.0" layoutX="209.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/dislike-2.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="228.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="25">
+                           <font>
+                              <Font name="PT Sans" size="10.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="14.0" fitWidth="14.0" layoutX="625.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/chatting.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="642.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="459 balasan">
+                           <font>
+                              <Font name="PT Sans" size="10.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="14.0" fitWidth="14.0" layoutX="699.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/eye.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="716.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1761 dilihat">
+                           <font>
+                              <Font name="PT Sans" size="10.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="701.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3 hari yang lalu">
+                           <font>
+                              <Font name="PT Sans" size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <effect>
+                        <DropShadow offsetX="2.0" offsetY="2.0">
+                           <color>
+                              <Color opacity="0.5" />
+                           </color></DropShadow>
+                     </effect>
+                  </Pane>
+                  <Pane maxWidth="-Infinity" minWidth="-Infinity" prefHeight="137.0" prefWidth="788.0" style="-fx-background-color: WHITE; -fx-background-radius: 10;">
+                     <children>
+                        <ImageView fitHeight="115.0" fitWidth="117.0" layoutX="9.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/25a03641-d18b-4680-8675-2e0f6b928d4d.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="152.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/gamer.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="187.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Octaviano Ginanjar">
+                           <font>
+                              <Font name="PT Sans" size="10.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="10.0" fitWidth="10.0" layoutX="187.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/star.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="10.0" fitWidth="10.0" layoutX="200.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/star.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="10.0" fitWidth="10.0" layoutX="214.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/star.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="10.0" fitWidth="10.0" layoutX="228.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/star.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="10.0" fitWidth="10.0" layoutX="241.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/star.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="152.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apa yang menyebabkan kepribadian seseorang dapat berubah secara tiba tiba?">
+                           <font>
+                              <Font name="Arial Bold" size="13.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="152.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Assalamualaikum, perkenalkan aku Octa, pada kesempatan kali ini aku mau bertanya tentang topik kepribadian seseo-&#10;rang, akhir-akhir ini aku sering mengalami perubahan kepribadian secara tiba-tiba, aku ingin mengetahui apa penyebab &#10;hal tersebut karena itu sangat mengganggu orang-orang yang ada di sekitarku ketika aku mengalaminya.&#10;  ">
+                           <font>
+                              <Font name="PT Sans" size="12.0" />
+                           </font>
+                        </Text>
+                        <Circle fill="WHITE" layoutX="161.0" layoutY="121.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+                        <ImageView fitHeight="10.0" fitWidth="10.0" layoutX="156.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/like-2.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="175.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1268">
+                           <font>
+                              <Font name="PT Sans" size="10.0" />
+                           </font>
+                        </Text>
+                        <Circle fill="WHITE" layoutX="214.0" layoutY="121.0" radius="9.0" stroke="BLACK" strokeType="INSIDE" />
+                        <ImageView fitHeight="10.0" fitWidth="10.0" layoutX="209.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/dislike-2.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="228.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="49">
+                           <font>
+                              <Font name="PT Sans" size="10.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="14.0" fitWidth="14.0" layoutX="625.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/chatting.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="642.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="337 balasan">
+                           <font>
+                              <Font name="PT Sans" size="10.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="14.0" fitWidth="14.0" layoutX="699.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../gambar/eye.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="716.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1359 dilihat">
+                           <font>
+                              <Font name="PT Sans" size="10.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="700.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5 jam yang lalu">
+                           <font>
+                              <Font name="PT Sans" size="10.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <effect>
+                        <DropShadow offsetX="2.0" offsetY="2.0">
+                           <color>
+                              <Color opacity="0.5" />
+                           </color></DropShadow>
+                     </effect>
+                  </Pane>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
